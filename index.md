@@ -517,6 +517,33 @@ versus:
 \rightarrow
 \text{Exploit sparsity}
 \rightarrow
+
+
+
+Successive Over-Relaxation (SOR)
+
+Equation display note: This version uses plain-text/Unicode equations inside code blocks instead of LaTeX. This makes the formulas readable even when your GitHub Pages Markdown renderer does not support MathJax/LaTeX.
+
+We already know Gauss–Seidel (GS).
+
+For GS, we had:
+
+xiᵏ+1
+=
+1/aᵢᵢ
+left[
+bi
+-Σ(j=1 to i−1)aijx_jᵏ+1
+-Σ(j=i+1 to n)aijx_jᵏ
+right]
+
+The important idea was:
+
+GS calculates a new value and directly uses it.
+
+Now SOR asks:
+
+What if the GS correction is not enough? Can we move farther in the same direction to re
 \text{Efficient}
 }
 \]
